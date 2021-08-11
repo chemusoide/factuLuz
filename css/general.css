@@ -1,0 +1,317 @@
+/* RESET, sacado de http://meyerweb.com/eric/thoughts/2007/04/14/reworked-reset/ */
+
+/* Don't forget to set a foreground and background color 
+   on the 'html' or 'body' element! */
+html, body, div, span,
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    line-height: 1;
+    font-family: inherit;
+    text-align: left;
+    vertical-align: baseline;
+}
+a img, :link img, :visited img {
+    border: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ol, ul {
+    list-style: none;
+}
+q:before, q:after,
+blockquote:before, blockquote:after {
+    content: "";
+}
+/* FIN RESET */
+
+html {
+	color: black;
+	background: #EEE;
+}
+
+body {
+    background: white;
+    color: black;
+    width: 1000px;
+    margin: 1em auto;
+    min-height: 700px;
+    font-family: Tahoma, arial, sans-serif;
+    padding: 1em;
+}
+
+h1 {
+    font-size: 150%;
+    font-weight: bold;
+    margin: 2em 0 1em 0;
+    color: #f18e00;
+    border-bottom: 1px solid  #f18e00;
+}
+
+a:link, a:active, a:visited {
+    text-decoration: none;
+    color: #f18e00;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.derecha { text-align: right; }
+.centrado { text-align: center; }
+.top { vertical-align: top; }
+
+ul {
+	list-style-type: disc;
+	list-style-position: inside;
+	margin: 1em 0;
+}
+
+/* Listado genérico */
+.listado {
+    width: 100%;
+    clear: both;
+    margin: 1em 0;
+    border-bottom: 1px solid #f18e00;
+}
+
+.listado tr.impar {
+    background: #EEE;	
+}
+
+.listado tr:hover {
+	background: #CCC;
+}
+
+.listado th {
+    font-weight: bold;
+    color: #f18e00;
+    border-bottom: 1px solid #f18e00;
+    cursor: pointer;
+}
+
+.listado th, .listado td {
+    padding: 2px;
+}
+
+.listado a:link, .listado a:active, .listado a:visited {
+    text-decoration: none;
+    color: #f18e00;
+}
+
+.listado a:hover {
+    text-decoration: underline;
+}
+
+/* Ficha genérica */
+.ficha {
+    margin: 1em 0;
+}
+
+.ficha fieldset {
+	border: 1px solid #f18e00;
+	padding: 1em;
+}
+
+.ficha legend {
+	padding: 0.4em 1em;
+	font-size: 110%;
+	border: 1px solid #f18e00;
+	color: white;
+	background: #f18e00;
+}
+
+.ficha label {
+    display: block;
+	cursor: pointer;
+	color: #f18e00;
+	font-weight: bold;
+}
+
+.ficha p {
+	padding: 5px;
+}
+
+.ficha input[type=text], .ficha input[type=password], .ficha textarea {
+	border: 1px solid #CCC;
+	padding: 2px 4px;
+}
+
+.ficha input[type=text]:focus, .ficha input[type=password]:focus, .ficha textarea:focus {
+	border: 1px solid red !important;
+}
+
+.ficha textarea {
+	width: 500px;
+	height: 200px;	
+}
+
+.ficha .input_ancho {
+	width: 500px;
+}
+
+#mensaje {
+    margin: 1em 0;
+    padding: 1em;
+}
+
+#mensaje.errorMensaje {
+	color: red;
+	border: 1px solid red;
+}
+
+#mensaje.infoMensaje {
+    color: blue;
+    border: 1px solid blue;
+}
+
+/* dataTables */
+.dataTables_filter {
+	float: right;
+}
+
+.dataTables_length {
+    float: left;
+}
+
+.dataTables_info {
+	margin: 1em 0;
+}
+
+/* Líneas de factura en ficha */
+
+#lineasFactura {
+	margin: 1em 10px;
+}
+
+#lineasFactura th {
+    font-weight: bold;
+    color: #f18e00;
+    border-bottom: 1px solid #f18e00;
+    padding: 2px !important;
+}
+
+#lineasFactura input[type=text]:focus, #lineasFactura select:focus {
+	background: #CCC;
+	border: none !important;
+}
+
+#lineasFacturaTable {
+	margin-bottom: 1em;
+}
+
+#lineasFacturaTableBody input[type=text] {
+    width: 100px;
+    padding: 2px 0 !important;
+    border: none !important;
+}
+#lineasFacturaTableBody .lfactura_pacienteservicio {
+	width: 200px !important;
+	text-align: left;
+	padding: 5px 0 !important;
+	margin-left: 5px;
+	border: none !important;
+	background: white;
+}
+#lineasFacturaTableBody .lfactura_intervencionservicio  {
+	width: 350px !important;
+	text-align: left;
+	padding: 5px 0 !important;
+	margin-left: 5px;
+	border: none !important;
+	background: white;
+}
+
+#lineasFacturaTableBody .lfactura_iva, 
+#lineasFacturaTableBody .lfactura_irpf  {
+	width: 55px !important;
+	text-align: right;
+	padding: 2px 0 !important;
+	margin-left: 15px;
+	border: none !important;
+	background: white;
+}
+
+#lineasFacturaTableBody .lfactura_total  {
+	width: 70px !important;
+	text-align: right;
+	padding: 2px 0 !important;
+	margin-left: 2px;
+	border: none !important;
+}
+#lineasFacturaTableBody .lfactura_parcial {
+	width: 60px !important;
+	text-align: right;
+	padding: 2px 0 !important;
+	margin-left: 2px;
+	border: none !important;
+}
+
+#lineasFacturaTableBody .lfactura_bimp,
+#lineasFacturaTableBody .lfactura_fechaservicio
+{
+	width: 60px !important;
+	text-align: right;
+	padding: 2px 0 !important;
+	border: none !important;
+}
+/*
+#lineasFacturaTableBody .lfactura_fechaservicio {
+	text-align: left !important;
+	font-size: 70%;
+}*/
+
+#lineasFacturaTableBody .tdBorrar {
+	text-align: right !important;
+}
+
+
+#contenedorTotalFactura {
+	text-align: right;
+	font-weight: bold;
+	font-size: 20px;
+}
+#contenedorParcialFactura,
+#contenedorBaseFactura,
+#contenedorIvaFactura,
+#contenedorIrpfFactura
+{
+	text-align: right;
+	font-size: 16px;
+}
+
+#tablaFichaFactura td {
+	padding: 5px;
+}
+
+/* Informes */
+.filtroInforme {
+	width: 400px; 
+	margin: 0 auto;
+}
+
+.filtroInforme label {
+	display: inline;
+}
+
+.filtroInforme input[type=text] {
+	margin: 2px;
+}
+
+.filtroInforme #mes, .filtroInforme #anyo, .filtroInforme #limite {
+	width: 50px;
+	text-align: center;
+}
