@@ -107,8 +107,8 @@
     //define("DB_DRIVER", "mysql");
     define("DB_DRIVER", "mysqli"); //este para que coja la conexión mysqli sino en versiones altas de PHP no fucniona
     define("DB_HOST", "localhost");
-    define("DB_USER", "mypol4160");
-    define("DB_PASSWORD", "ilwOcoDs");
+    define("DB_USER", "DB_USER");
+    define("DB_PASSWORD", "DB_PASSWORD");
     define("DB_DATABASE", NOMBRE_BD_SIN_ANO.$ano_actual);
     define("DB_DEBUGMODE", "false"); // Ojo, a true desactiva las citas vía AJAX/JSON.
     define("DB_OLD_DATABASES", serialize(array(NOMBRE_BD_SIN_ANO.$listado_anos_anteriores[0],NOMBRE_BD_SIN_ANO.$listado_anos_anteriores[1],NOMBRE_BD_SIN_ANO.$listado_anos_anteriores[2],NOMBRE_BD_SIN_ANO.$listado_anos_anteriores[3],NOMBRE_BD_SIN_ANO.$listado_anos_anteriores[4])));
